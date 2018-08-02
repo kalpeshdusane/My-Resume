@@ -1,0 +1,265 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+% {{{
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{palatino}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=10in
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.5cm}
+\renewcommand{\labelitemii}{$\circ$}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.375in}
+%\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{0.1375in}
+%\addtolength{\textheight}{1.75in}
+\pagestyle{empty}
+% }}}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small
+        {
+            \begin{minipage}
+                {0.992\textwidth}\textbf{{\textsc{#1 \vphantom{p\^{E}} }}}
+                \\[-0.3cm]
+                \hrule
+            \end{minipage}
+            \\[-0.5cm]
+        }
+ }}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+%{{{
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+%}}}
+\resheading{\textbf{\large Areas of Interest}}\\[\lsep]
+%{{{
+    \begin{itemize}
+    \item[] 
+    \hspace{-0.4cm} $\bullet$ Data Science 
+    % \hspace{0.2cm} $\bullet$ Image Processing 
+    \hspace{0.2cm} $\bullet$ Computer Vision
+   \hspace{0.2cm} $\bullet$ Algorithms and Complexity
+\end{itemize}
+%}}}
+\resheading{\textbf{\large MTech Project and Seminar}}\\[\lsep] 
+% {{{
+\begin{itemize}
+\item \textbf{Scaled Topography from video sequence of Underwater Images}  \\
+    \emph{M.Tech Project, Guide: Prof. Ajit Rajwade} \hfill {\emph{(May 2018 - Ongoing)}}
+    \\[-0.6cm]
+    \begin{itemize}
+    	\item Implemented feature point tracking algorithm using Siamese Convolution Neural Network
+    	\item Explored the mathematics behind the various methods of estimating the equation of an underlying plane
+    	\item Applied trajectories of feature points obtained from tracking algorithm to estimate the depth of underwater image in the various ground structure such as piece-wise constant or planar structure
+    \end{itemize}
+
+\item \textbf{Restoration of Underwater Images} \\
+    \emph{M.Tech Seminar, Guide:  Prof.  Ajit Rajwade}
+    \hfill {\emph{(January 2018 - April 2018)}}
+    \\ [-0.6cm]
+      \begin{itemize}\itemsep \isep
+        \item Examined the effect of dynamic refraction on the sinusoidal wave in the distorted underwater images
+        
+        %  \vspace{0.05cm}
+        
+        \item Surveyed various water surface shape reconstruction methods such as optical flow based method, learning model-based method, and motion blur model-based method
+         
+        % \item  Studied various methods like reconstruction of water surface using optical flow, also using model based tracking(as uses PCA)
+        
+        \item Simulated video of underwater images in presence of circular ripples and mixture of circular ripples
+    \\ [-0.6cm]
+      \end{itemize}
+\end{itemize}
+% }}}
+\resheading{\textbf{\large Course Projects and Assignments}}\\[\lsep]
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+
+\item \textbf{Multi-label Image Classification of the Amazon Rainforest} \\ \emph{(CS 763: Computer Vision, Guide: Prof. Arjun Jain)} \hfill {\emph{(Spring 2018)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Solved the Multi-label Image Classification problem using Encoder \textbf{Convolutional Neural Network(CNN)} for the feature extraction and Decoder \textbf{Recurrent Neural Network(RNN)} for predicting actual labels
+    \item Explored the attention mechanisms in RNN which result in our highest F2 score of 90.25 tested on kaggle
+    \end{itemize}
+
+\item \textbf{Inferring Basis Mismatch in Image Representations} \\ {\emph{(CS 754: Advanced Image Processing, Guide: Prof. Ajit Rajwade)}} \hfill {\emph{(Spring 2018)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Empirically in Compressed sensing, the problem of Basis mismatch occurs because of the two main reasons such as the noise or the discrete representation of bases 
+    % \item Empirically in Compressed sensing, due to discrete representation of bases causes the problem of Basis mismatch
+    \item Implemented the method of Alternating Convex Search(ACS) which uses standard $l_1$-minimization to find the signal model coefficients followed by a maximum likelihood estimate of the signal model
+    \end{itemize}
+
+\item \textbf{Automatic Image Colorization} \\
+    {\emph{(CS 663: Digital Image Processing, Guide: Prof. Ajit Rajwade \& Prof. Suyash P. Awate)}} \hfill {\emph{(Autumn 2017)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Objective was to convert given grayscale image into colorized(RGB) image without any manual intervention
+	\item Implemented different approaches such as neural network approach, a combination of neural network and traditional image processing approach, and Convolutional Neural Network(CNN) approach 
+\end{itemize}
+
+\item \textbf{Credit Card Fraud Detection System}\\ {\emph{(CS725: Foundations of Machine Learning, Guide: Prof. Ganesh Ramakrishnan)}} \hfill {\emph{(Autumn 2017)}}
+\\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Solved binary classification problem by applying various machine learning models like Logistic Regression, Support vector machine (SVM), Neural Network, Random Forest classifiers with hyperparameter tuning
+		\item Random Forest performed best as compared to other models with F1 score 0.9997 
+    \end{itemize}
+\pagebreak
+\item \textbf{Implementation of CNN and RNN from scratch in Lua Torch7} \\
+    {\emph{(CS 763: Computer Vision, Course Assignment)}} \hfill {\emph{(Spring 2018)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Executed the convolutional layer and implemented the backpropagation of Convolutional Neural Network(CNN)
+    \item Implemented forward and back propagation of single hidden layer Recurrent Neural Network(RNN)
+	\end{itemize}
+\vspace{-0.2cm}
+\item \textbf{Devanagari Character Recognition using Tensorflow} \\ {\emph{(CS 621: Artificial Intelligence, Course Assignment)}} \hfill {\emph{(Autumn 2017)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Objective was to recognized 46 devanagari characters using Neural Network
+    \item Achieved 98.68\% accuracy after training a single hidden layer neural network(1000 neurons) for 300 epochs
+    \end{itemize}
+
+
+\end{itemize}
+%}}}
+ \vspace{0.05cm}
+\resheading{\textbf{\large Work Experience}}\\[\lsep]
+\\[-0.38cm]
+% {{{
+\begin{itemize}
+    \item \textbf{Cognizant Technology Solutions}\\
+    \emph{Programmer Analyst Trainee, Chennai 
+    \hfill (September 2015 - September 2016)}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item \textbf{Content Management System}
+        \begin{itemize}
+            \item Full-stack design and implementation for a web application using the Agile technique
+            \item Incorporated Kendo UI framework for the front-end functionality of a web application
+            \item Implemented in C\# .NET using SQL Server and MVC. Managed using Team Foundation Server
+        \end{itemize}
+    \item \textbf{E-Learning Platform}\\
+    % Developed back-end \& front-end module related to collecting \& displaying the results of tests taken by any trainee\\
+    Developed a whole module related to collecting and displaying the results of tests taken by any trainee
+        % \begin{itemize}
+        %     \item Internal project of cognizant which was to be developed for Employees going through training process
+        %     \item Developed a whole module related to collecting and displaying the results of tests taken by any trainee
+        % \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Persistent Systems Pvt. Ltd.} \\
+    \emph{Project Intern, Pune} \hfill {\emph{(June 2014 - April 2015)}}\\
+    \textbf{Implementation of Seam Carving for Image Retargeting using CUDA enabled GPU}\\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Developed a windows application (in Microsoft visual studio) using \textbf{CUDA C++} which reduce the size of image by content-aware image resizing algorithm called \textbf{Seam Carving}
+    \item Demonstrated the difference between executing the seam carving algorithm using the sequential approach on a traditional CPU and using the parallel approach on a modern CUDA enabled GPU
+    \item Achieved \textbf{$\sim$7.5X} acceleration in the execution time, GPU execution being the fastest
+    \end{itemize}
+\end{itemize}
+% }}}
+\resheading{\textbf{\large Courses Taken }}\\[\lsep]
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+    \item[] \begin{tabular}{p{8cm}p{5cm}l }
+    Foundations of Machine Learning & Advanced Image Processing  & Artificial Intelligence\\ 
+    Learning Analytics and Educational Data Mining & Advanced Machine Learning   &  Computer Vision
+    \end{tabular}
+    \vspace{-0.25cm}
+    \item[] \begin{tabular}{p{8cm}p{5cm}l }
+    Fundamentals of Digital Image Processing & Algorithms and Complexity
+    \end{tabular}
+\end{itemize}
+%}}} 
+% \pagebreak
+\vspace{-0.05cm}
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Languages}: C, C++, C\#, Python (SKlearn, Pandas, Numpy, Matplotlib, PyTorch), MATLAB\\[-0.6cm]
+  \item \textbf{Web Development}: HTML/CSS,
+  JavaScript, JQuery\\[-0.6cm]
+  \item \textbf{Tools}: Git, Microsoft Visual Studio, \LaTeX \\[-0.6cm]
+\end{itemize}
+\vspace{0.1cm}
+\resheading{\textbf{\large Positions of Responsibility}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Interview Coordinator,
+  Placement Team IIT Bombay} \emph{\hfill(December 2017)} \\[-0.6cm]
+  \begin{itemize}
+    \item Assisted 7 companies in organizing interview process seamlessly during 2017-18 placements
+    \item Acted as Single Point Of Contact(SPOC) for 3 companies and ensured smooth functioning of interviews
+  \end{itemize}
+  \item \textbf{Teaching Assistantship, IIT Bombay} \\[-0.6cm]
+    \begin{itemize}
+         \item \textbf{CS 663: Fundamentals of Digital Image Processing} \\ \emph{(under Prof. Ajit Rajwade \& Prof. Suyash P. Awate)}\hfill \emph{(Autumn 2018)}
+        \begin{itemize}
+                \item Worked with a team of seven other TAs to evaluate assignments, exams, and course projects
+                \item Assisted students to resolve their difficulties via moodle discussion forum
+        \end{itemize} 
+       \item \textbf{CS101: Computer Programming \& Utilization}\\ \emph{(under Prof. Umesh Bellur \& Prof. Krishna S)}\hfill \emph{(Autumn 2017 - Spring 2018)}
+       \begin{itemize}
+           \item Mentored 14 students each semester and cleared their doubts in weekly labs
+    	   \item Evaluated graded labs, examination papers \& assisted in conducting examinations of 597 students
+       \end{itemize} 
+    \end{itemize}
+\end{itemize}
+%}}}
+\resheading{\textbf{\large Achievements and Activities}}\\[\lsep]
+\\[-0.3cm]
+\begin{itemize}\itemsep \isep
+    \item \noindent Scored \textbf{99.84} percentile in GATE 2017 CS/IT amongst 96,878 candidates \emph{\hfill  (2017)}
+    \item Among \textbf{top 1\%} of HSC($12^{th}$ examination) students in Maharashtra state board \emph{\hfill  (2011)}
+    \item Ranked \textbf{2nd} in B.E. among 120 students in CSE department \emph{\hfill  (2015)}
+    \item Secured \textbf{2nd} prize for the B.E. project in Project competition held by CSI student Chapter
+    \emph{\hfill  (2015)}
+    \item \textbf{Black Belt} in Shotokan Karate Style from Japan Karate Association(JKA) \emph{\hfill  (2009)}
+    \item Participated in \textbf{5km Cycling, 4.5km Crossy running} GC at PG Sports IIT Bombay \emph{\hfill  (2017-2018)}
+    \item \textbf{Hobbies:} Solving 9$\times$9 Sudoku and Rubik's Cube, Watching Football matches and Anime
+\end{itemize}
+\end{document}
+
