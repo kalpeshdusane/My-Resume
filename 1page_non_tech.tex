@@ -1,0 +1,178 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+% {{{
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{palatino}
+\fontfamily{SansSerif}
+\selectfont
+\usepackage[inline]{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=10in
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.5cm}
+\renewcommand{\labelitemii}{$\circ$}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.375in}
+%\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{0.1375in}
+%\addtolength{\textheight}{1.75in}
+\pagestyle{empty}
+% }}}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small
+        {
+            \begin{minipage}
+                {0.992\textwidth}\textbf{{\textsc{#1 \vphantom{p\^{E}} }}}
+                \\[-0.3cm]
+                \hrule
+            \end{minipage}
+            \\[-0.5cm]
+        }
+ }}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+%{{{
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\hspace{0.2cm}\\
+\resheading{\textbf{\large Achievements and Activities}}\\[\lsep]
+\\[-0.35cm]
+\begin{itemize}\itemsep \isep
+    \item Scored \textbf{99.84} percentile in GATE 2017 CS/IT amongst 96,878 candidates \emph{\hfill  (2017)}
+    \item Ranked \textbf{2nd} in the batch from Computer Science Department in Bachelor's final year\emph{\hfill  (2015)}
+    % \item Ranked \textbf{2nd} in B.E. among 120 students in CSE department \emph{\hfill  (2015)}
+    \item Secured \textbf{2nd} prize for the bachelor's project in Project competition held by CSI student Chapter
+    \emph{\hfill  (2015)}
+    \item Among \textbf{top 1\%} students in HSC($12^{th}$ examination) of Maharashtra  state board \emph{\hfill  (2011)}
+    \item Sho Dan (\textbf{Black Belt}) in Shotokan Karate Style from Japan Karate Association(JKA) \emph{\hfill  (2009)}
+    \item Participated in \textbf{5km Cycling, 5km Crossy running} at PG Sports IIT Bombay \emph{\hfill  (2017-2018)} 
+    \item \textbf{Hobbies:} Solving 9$\times$9 Sudoku and Rubik's Cube, Watching Football matches and Anime\\[-0.5cm]
+\end{itemize}
+\resheading{\textbf{\large Positions of Responsibility}}\\[\lsep] 
+\\[-0.35cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Interview Coordinator,
+  Placement Team IIT Bombay} \emph{\hfill(December 2017)} \\[-0.6cm]
+  \begin{itemize}
+    \item Assisted in the placement of \textbf{1600} students within a team of \textbf{200} students during 2017-18 placements season
+    \item Aided 7 companies in organizing interview process seamlessly during 2017-18 placements
+    \item Acted as Sole Point Of Contact(SPOC) for 3 companies and ensured smooth functioning of interviews\\[-0.6cm]
+  \end{itemize}
+  \item \textbf{Teaching Assistant} for \textbf{CS663: Fundamentals of Digital Image Processing}\hfill \emph{(August 2018 - November 2018)}\\[-0.6cm]
+    \begin{itemize}
+        \item Worked with a team of 7 other TAs to evaluate assignments, quizzes, and semester exams   
+        \item Assisted students to resolve their difficulties via Moodle discussion forum\\[-0.6cm]
+        \end{itemize} 
+    \item \textbf{Teaching Assistant} for  \textbf{CS101: Computer Programming \& Utilization}\hfill \emph{(August 2017 - April 2018)} \\[-0.6cm]
+       \begin{itemize}
+           \item Mentored 14 students each semester and cleared their doubts in weekly labs
+    	   \item Evaluated graded labs, examination papers and assisted in conducting examinations of \textbf{450+} students \\[-0.5cm]
+       \end{itemize} 
+\end{itemize}
+\resheading{\textbf{\large Work Experience}}\\[-0.4cm]
+% {{{
+\begin{itemize}
+    \item \textbf{Cognizant Technology Solutions} |
+    \emph{Programmer Analyst Trainee, Chennai} \hfill {\emph{(September 2015 - September 2016)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Full-stack design and implementation for a web application using the Agile technique in C\# .NET 
+    \vspace{0.06cm}
+    \item Incorporated Kendo UI framework and improved the front-end functionality of a web application
+ \\ [-0.6cm]
+    \end{itemize}
+    \item \textbf{Persistent Systems Pvt. Ltd.} |
+    \emph{Project Intern, Pune} \hfill {\emph{(June 2014 - April 2015)}}
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Developed an application  using \textbf{CUDA C++} which implemented the content-aware image resizing algorithm
+    \vspace{-0.375cm}
+    \item Achieved \textbf{$\sim$7.5$\times$} acceleration in the GPU execution time compared to CPU due to a high degree of parallelism
+    \\ [-0.5 cm]
+    \end{itemize}
+\end{itemize}
+\resheading{\textbf{\large MTech Project}}\\[-0.4cm] 
+% {{{
+\begin{itemize}
+\item \textbf{Scaled Topography from the video sequence of underwater images}  \\
+    \emph{Guide: Prof. Ajit Rajwade} \hfill {\emph{(May 2018 - Ongoing)}}
+    \\ [-0.6cm]
+      \begin{itemize}\itemsep \isep
+        \item Used feature point tracking algorithm which were implemented using Siamese Convolution Neural Network
+        \vspace{-0.375cm}
+        \item Estimated depth of underwater scene in various underlying ground structures such as piecewise constant
+    \\ [-0.6cm]
+      \end{itemize}
+\end{itemize}
+\resheading{\textbf{\large Courses Taken }}\\[\lsep]
+% \\[-0.275cm]
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+    \item[] \begin{tabular}{p{8cm}p{5cm}l }
+    Foundations of Machine Learning & Advanced Image Processing  & Artificial Intelligence\\ 
+    Learning Analytics and Educational Data Mining & Advanced Machine Learning   &  Computer Vision
+    \end{tabular}
+    \vspace{-0.25cm}
+    \item[] \begin{tabular}{p{8cm}p{5cm}l }
+    Fundamentals of Digital Image Processing & Algorithms and Complexity
+    \end{tabular}
+\end{itemize}
+\vspace{-0.1cm}
+\resheading{\textbf{\large Course Projects}}\\[\lsep]
+\\[-0.35cm]
+%{{{
+\begin{itemize}
+\item \textbf{Multi-label Image Classification of the Amazon Rainforest}   \hfill {\emph{(February 2018 - April 2018)}} \\
+Experimented with various combinations of CNN and RNN where CNN encoded the image while the RNN \\predicted labels in each time-step and used pre-trained VGG-16 as CNN which was fine-tuned while training \\[-0.6cm]
+% \item \textbf{Inferring Basis Mismatch in Image Representations} \hfill {\emph{(March 2018 - April 2018)}}\\[-0.6cm]
+% \item \textbf{Automatic Image Colorization} \hfill {\emph{(October 2017 - November 2017)}}\\[-0.6cm]
+\item \textbf{Credit Card Fraud Detection System} \hfill {\emph{(November 2017)}}\\
+Implemented Logistic Regression,
+Support vector machine (SVM), Neural Network, and Random Forest classifiers  \\[-0.5cm]
+\end{itemize}
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Languages}: C, C++,  C\#, Python (SKlearn, Pandas, Numpy, Matplotlib, PyTorch), MATLAB \\[-0.5cm]
+\end{itemize}
+\begin{itemize*}[series=MyList, before=\hspace{3.3ex}]
+    \item \ \textbf{Web Development}: HTML, CSS,
+  JavaScript, JQuery \ \ \ \ \ \
+    \item \textbf{Tools}: Git, Microsoft Visual Studio, \LaTeX
+  \end{itemize*}
+\end{document}
+
+

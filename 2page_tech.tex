@@ -66,9 +66,10 @@
 \hspace{0.2cm}\\
 \hspace{0.2cm}\\
 \hspace{0.2cm}\\
-\hspace{0.2cm}\\
-\hspace{0.2cm}\\
-\hspace{0.2cm}\\
+% \\
+\hspace{0.5cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
 %}}}
 \resheading{\textbf{\large Areas of Interest}}\\[\lsep]
 %{{{
@@ -82,14 +83,15 @@
 %}}}
 \resheading{\textbf{\large MTech Project and Seminar}}\\[\lsep] 
 % {{{
+\\ [-0.3cm]
 \begin{itemize}
-\item \textbf{Scaled Topography from video sequence of Underwater Images}  \\
+\item \textbf{Scaled Topography from the video sequence of Underwater Images}  \\
     \emph{M.Tech Project, Guide: Prof. Ajit Rajwade} \hfill {\emph{(May 2018 - Ongoing)}}
     \\[-0.6cm]
     \begin{itemize}
-    	\item Implemented feature point tracking algorithm using Siamese Convolution Neural Network
-    	\item Explored the mathematics behind the various methods of estimating the equation of an underlying plane
-    	\item Applied trajectories of feature points obtained from tracking algorithm to estimate the depth of underwater image in the various ground structure such as piece-wise constant or planar structure
+        \item Explored the mathematics behind the various methods of estimating the equation of an underlying plane
+        \item Used feature point tracking algorithm which were implemented using Siamese Convolution Neural Network
+        \item Applied knowledge of the trajectories of feature points obtained from tracking algorithm to estimate the depth of underwater  image in the various ground structure such as piece-wise constant or planar structure\\ [-0.6cm]
     \end{itemize}
 
 \item \textbf{Restoration of Underwater Images} \\
@@ -97,32 +99,33 @@
     \hfill {\emph{(January 2018 - April 2018)}}
     \\ [-0.6cm]
       \begin{itemize}\itemsep \isep
-        \item Examined the effect of dynamic refraction on the sinusoidal wave in the distorted underwater images
+        \item Conducted literature Survey  about the effect of dynamic refraction on the sine wave in the distorted images
+        % \item Surveyed literature about the effect of dynamic refraction on the sine wave in the distorted images
         
-        %  \vspace{0.05cm}
+        \vspace{0.07cm}
         
         \item Surveyed various water surface shape reconstruction methods such as optical flow based method, learning model-based method, and motion blur model-based method
-         
+        \vspace{0.07cm}
         % \item  Studied various methods like reconstruction of water surface using optical flow, also using model based tracking(as uses PCA)
         
         \item Simulated video of underwater images in presence of circular ripples and mixture of circular ripples
-    \\ [-0.6cm]
+    \\ [-0.5cm]
       \end{itemize}
 \end{itemize}
 % }}}
-\resheading{\textbf{\large Course Projects and Assignments}}\\[\lsep]
-\\[-0.3cm]
+\resheading{\textbf{\large Course Projects}}\\[\lsep]
+\\[-0.2cm]
 %{{{
 \begin{itemize}
 
-\item \textbf{Multi-label Image Classification of the Amazon Rainforest} \\ \emph{(CS 763: Computer Vision, Guide: Prof. Arjun Jain)} \hfill {\emph{(Spring 2018)}}
+\item \textbf{Multi-label Classification on Satellite Images of the Amazon Rainforest} \\ \emph{(CS763: Computer Vision, Guide: Prof. Arjun Jain)} \hfill {\emph{(February 2018 - April 2018)}}
     \\ [-0.6cm]
     \begin{itemize}\itemsep \isep
     \item Solved the Multi-label Image Classification problem using Encoder \textbf{Convolutional Neural Network(CNN)} for the feature extraction and Decoder \textbf{Recurrent Neural Network(RNN)} for predicting actual labels
-    \item Explored the attention mechanisms in RNN which result in our highest F2 score of 90.25 tested on kaggle
+    \item Explored attention mechanisms on CNN output which result in our highest \textbf{F2 score of 90.25} tested on kaggle
     \end{itemize}
 
-\item \textbf{Inferring Basis Mismatch in Image Representations} \\ {\emph{(CS 754: Advanced Image Processing, Guide: Prof. Ajit Rajwade)}} \hfill {\emph{(Spring 2018)}}
+\item \textbf{Inferring Basis Mismatch in Image Representations} \\ {\emph{(CS754: Advanced Image Processing, Guide: Prof. Ajit Rajwade)}} \hfill {\emph{(March 2018 - April 2018)}}
     \\ [-0.6cm]
     \begin{itemize}\itemsep \isep
     \item Empirically in Compressed sensing, the problem of Basis mismatch occurs because of the two main reasons such as the noise or the discrete representation of bases 
@@ -130,34 +133,37 @@
     \item Implemented the method of Alternating Convex Search(ACS) which uses standard $l_1$-minimization to find the signal model coefficients followed by a maximum likelihood estimate of the signal model
     \end{itemize}
 
-\item \textbf{Automatic Image Colorization} \\
-    {\emph{(CS 663: Digital Image Processing, Guide: Prof. Ajit Rajwade \& Prof. Suyash P. Awate)}} \hfill {\emph{(Autumn 2017)}}
+\item \textbf{Implementation of CNN and RNN from scratch in Lua Torch7} \\
+    {\emph{(CS763: Computer Vision, Guide: Prof. Arjun Jain)}} \hfill {\emph{(February 2018 - March 2018)}}
     \\ [-0.6cm]
     \begin{itemize}\itemsep \isep
-    \item Objective was to convert given grayscale image into colorized(RGB) image without any manual intervention
-	\item Implemented different approaches such as neural network approach, a combination of neural network and traditional image processing approach, and Convolutional Neural Network(CNN) approach 
+    \item Executed the convolutional layer and implemented the backpropagation of Convolutional Neural Network
+    \item Implemented forward and back propagation of single hidden layer Recurrent Neural Network(RNN)
+    \end{itemize}
+
+\item \textbf{Automatic Image Colorization} \\
+    {\emph{(CS663: Fundamentals of Digital Image Processing, Guide: Prof. Ajit Rajwade \& Prof. Suyash P. Awate)}} \hfill {\emph{(November 2017)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item Converted the training images to LAB colorspace then framed the task as a regression task and trained simple neural network, the neural network with SURF features in scikit-learn
+    \item Trained Convolutional Neural Network(CNN) to predict the AB space given the grayscale image as input
 \end{itemize}
 
-\item \textbf{Credit Card Fraud Detection System}\\ {\emph{(CS725: Foundations of Machine Learning, Guide: Prof. Ganesh Ramakrishnan)}} \hfill {\emph{(Autumn 2017)}}
+\item \textbf{Credit Card Fraud Detection System}\\ {\emph{(CS725: Foundations of Machine Learning, Guide: Prof. Ganesh Ramakrishnan)}} \hfill {\emph{(November 2017)}}
 \\[-0.6cm]
     \begin{itemize}\itemsep \isep
-        \item Solved binary classification problem by applying various machine learning models like Logistic Regression, Support vector machine (SVM), Neural Network, Random Forest classifiers with hyperparameter tuning
-		\item Random Forest performed best as compared to other models with F1 score 0.9997 
+        \item Solved binary classification problem by applying various machine learning models like Logistic Regression, Support Vector Machine, Neural Network(NN), Random Forest classifiers with hyperparameter tuning
+        \item Detected fraud with \textbf{Recall of 0.85} using \textbf{Random Forest} by addressing the problem of skewed data set 
     \end{itemize}
+% \pagebreak
+
+% \vspace{-0.2cm}
 \pagebreak
-\item \textbf{Implementation of CNN and RNN from scratch in Lua Torch7} \\
-    {\emph{(CS 763: Computer Vision, Course Assignment)}} \hfill {\emph{(Spring 2018)}}
+\item \textbf{Devanagari Character Recognition using Feed Forward Neural Network in Tensorflow} \\ {\emph{(CS621: Artificial Intelligence, Guide: Prof. G. Sivakumar)}} \hfill {\emph{(November 2017)}}
     \\ [-0.6cm]
     \begin{itemize}\itemsep \isep
-    \item Executed the convolutional layer and implemented the backpropagation of Convolutional Neural Network(CNN)
-    \item Implemented forward and back propagation of single hidden layer Recurrent Neural Network(RNN)
-	\end{itemize}
-\vspace{-0.2cm}
-\item \textbf{Devanagari Character Recognition using Tensorflow} \\ {\emph{(CS 621: Artificial Intelligence, Course Assignment)}} \hfill {\emph{(Autumn 2017)}}
-    \\ [-0.6cm]
-    \begin{itemize}\itemsep \isep
-    \item Objective was to recognized 46 devanagari characters using Neural Network
-    \item Achieved 98.68\% accuracy after training a single hidden layer neural network(1000 neurons) for 300 epochs
+    \item Objective was to recognize 46 handwritten Devanagari characters present in 28 x 28 PNG image using NN
+    \item Achieved \textbf{98.68\%} accuracy after training a single hidden layer neural network on 92000 samples
     \end{itemize}
 
 
@@ -169,35 +175,39 @@
 % {{{
 \begin{itemize}
     \item \textbf{Cognizant Technology Solutions}\\
-    \emph{Programmer Analyst Trainee, Chennai 
-    \hfill (September 2015 - September 2016)}
-    \\ [-0.6cm]
-    \begin{itemize}\itemsep \isep
-    \item \textbf{Content Management System}
-        \begin{itemize}
-            \item Full-stack design and implementation for a web application using the Agile technique
-            \item Incorporated Kendo UI framework for the front-end functionality of a web application
-            \item Implemented in C\# .NET using SQL Server and MVC. Managed using Team Foundation Server
-        \end{itemize}
-    \item \textbf{E-Learning Platform}\\
-    % Developed back-end \& front-end module related to collecting \& displaying the results of tests taken by any trainee\\
-    Developed a whole module related to collecting and displaying the results of tests taken by any trainee
+        \emph{Programmer Analyst Trainee, Chennai 
+        \hfill (September 2015 - September 2016)}
+        \\ [-0.6cm]
+        \begin{itemize}\itemsep \isep
+        \item \textbf{Content Management System}
+            \begin{itemize}
+                \item Full-stack design and implementation for a web application using the Agile technique
+                \item Incorporated Kendo UI framework and improved the front-end functionality of a web application
+                \item Implemented in C\# .NET using SQL Server and MVC. Managed using Team Foundation Server
+            \end{itemize}
+        \item \textbf{E-Learning Platform}\\
+        % Developed back-end \& front-end module related to collecting \& displaying the results of tests taken by any trainee\\
+        Developed a whole module related to collecting and displaying the results of tests taken by any trainee
         % \begin{itemize}
         %     \item Internal project of cognizant which was to be developed for Employees going through training process
         %     \item Developed a whole module related to collecting and displaying the results of tests taken by any trainee
         % \end{itemize}
-    \end{itemize}
-    
-    \item \textbf{Persistent Systems Pvt. Ltd.} \\
+        \\[-0.5cm]
+        \end{itemize}
+        
+    \item \textbf{Persistent Systems Ltd.} \\
     \emph{Project Intern, Pune} \hfill {\emph{(June 2014 - April 2015)}}\\
     \textbf{Implementation of Seam Carving for Image Retargeting using CUDA enabled GPU}\\ [-0.6cm]
     \begin{itemize}\itemsep \isep
-    \item Developed a windows application (in Microsoft visual studio) using \textbf{CUDA C++} which reduce the size of image by content-aware image resizing algorithm called \textbf{Seam Carving}
-    \item Demonstrated the difference between executing the seam carving algorithm using the sequential approach on a traditional CPU and using the parallel approach on a modern CUDA enabled GPU
-    \item Achieved \textbf{$\sim$7.5X} acceleration in the execution time, GPU execution being the fastest
+    \item Developed a windows application (in Microsoft visual studio) using \textbf{CUDA C++} which reduced the size of an image by the content-aware image resizing algorithm called \textbf{Seam Carving}\\[-0.32cm]
+    \item Demonstrated the difference between executing a sequential approach on CPU \& a parallel approach on GPU\\[-0.32cm]
+    % \item Achieved \textbf{$\sim$7.5X} acceleration in the execution time, GPU execution being the fastest
+    \item Achieved \textbf{$\sim$7.5$\times$} acceleration in the GPU execution time compared to CPU due to a high degree of parallelism
     \end{itemize}
 \end{itemize}
 % }}}
+% \\[-.6cm]
+\vspace{-0.1cm}
 \resheading{\textbf{\large Courses Taken }}\\[\lsep]
 \\[-0.3cm]
 %{{{
@@ -213,52 +223,55 @@
 \end{itemize}
 %}}} 
 % \pagebreak
-\vspace{-0.05cm}
-\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
-\\[-0.3cm]
-%{{{
-\begin{itemize}
-  \item \textbf{Languages}: C, C++, C\#, Python (SKlearn, Pandas, Numpy, Matplotlib, PyTorch), MATLAB\\[-0.6cm]
-  \item \textbf{Web Development}: HTML/CSS,
-  JavaScript, JQuery\\[-0.6cm]
-  \item \textbf{Tools}: Git, Microsoft Visual Studio, \LaTeX \\[-0.6cm]
-\end{itemize}
-\vspace{0.1cm}
 \resheading{\textbf{\large Positions of Responsibility}}\\[\lsep] 
-\\[-0.3cm]
+\\[-0.4cm]
 %{{{
 \begin{itemize}
   \item \textbf{Interview Coordinator,
   Placement Team IIT Bombay} \emph{\hfill(December 2017)} \\[-0.6cm]
   \begin{itemize}
-    \item Assisted 7 companies in organizing interview process seamlessly during 2017-18 placements
-    \item Acted as Single Point Of Contact(SPOC) for 3 companies and ensured smooth functioning of interviews
+    \item Assisted in the placement of \textbf{1600} students within a team of \textbf{200} students during 2017-18 placements season
+    \item Aided 7 companies in organizing interview process seamlessly during 2017-18 placements
+    \item Acted as Sole Point Of Contact(SPOC) for 3 companies and ensured smooth functioning of interviews\\[-0.5cm]
   \end{itemize}
   \item \textbf{Teaching Assistantship, IIT Bombay} \\[-0.6cm]
     \begin{itemize}
-         \item \textbf{CS 663: Fundamentals of Digital Image Processing} \\ \emph{(under Prof. Ajit Rajwade \& Prof. Suyash P. Awate)}\hfill \emph{(Autumn 2018)}
+         \item \textbf{CS663: Fundamentals of Digital Image Processing} \\ \emph{(under Prof. Suyash Awate \& Prof. Ajit Rajwade)}\hfill \emph{(August 2018 - November 2018)}
         \begin{itemize}
-                \item Worked with a team of seven other TAs to evaluate assignments, exams, and course projects
-                \item Assisted students to resolve their difficulties via moodle discussion forum
+                \item Worked with a team of 7 other TAs to evaluate assignments, quizzes, and semester exams   
+                \item Assisted students to resolve their difficulties via Moodle discussion forum
         \end{itemize} 
-       \item \textbf{CS101: Computer Programming \& Utilization}\\ \emph{(under Prof. Umesh Bellur \& Prof. Krishna S)}\hfill \emph{(Autumn 2017 - Spring 2018)}
+       \item \textbf{CS101: Computer Programming \& Utilization}\\ \emph{(under Prof. Umesh Bellur \& Prof. Krishna S)}\hfill \emph{(August 2017 - April 2018)}
        \begin{itemize}
            \item Mentored 14 students each semester and cleared their doubts in weekly labs
-    	   \item Evaluated graded labs, examination papers \& assisted in conducting examinations of 597 students
+           \item Evaluated graded labs, examination papers and assisted in conducting examinations of \textbf{450+} students 
        \end{itemize} 
     \end{itemize}
 \end{itemize}
+\vspace{-0.1cm}
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Languages}: C, C++, C\#, Python (SKlearn, Pandas, Numpy, Matplotlib, PyTorch), MATLAB\\[-0.6cm]
+  \item \textbf{Web Development}: HTML, CSS,
+  JavaScript, JQuery\\[-0.6cm]
+  \item \textbf{Tools}: Git, Microsoft Visual Studio, \LaTeX \\[-0.5cm]
+\end{itemize}
+% \vspace{2cm}
+% \hspace{-0.8cm}\\
+% \\[-5.2cm]
 %}}}
 \resheading{\textbf{\large Achievements and Activities}}\\[\lsep]
 \\[-0.3cm]
 \begin{itemize}\itemsep \isep
-    \item \noindent Scored \textbf{99.84} percentile in GATE 2017 CS/IT amongst 96,878 candidates \emph{\hfill  (2017)}
-    \item Among \textbf{top 1\%} of HSC($12^{th}$ examination) students in Maharashtra state board \emph{\hfill  (2011)}
-    \item Ranked \textbf{2nd} in B.E. among 120 students in CSE department \emph{\hfill  (2015)}
-    \item Secured \textbf{2nd} prize for the B.E. project in Project competition held by CSI student Chapter
+    \item \noindent Scored \textbf{99.84} percentile in \textbf{GATE 2017} CS/IT amongst 96,878 candidates \emph{\hfill  (2017)}
+    \item Ranked \textbf{2nd} in the batch from Computer Science Department in Bachelor's final year\emph{\hfill  (2015)}
+    \item Secured \textbf{2nd} prize for the bachelor's project in Project competition held by CSI student Chapter
     \emph{\hfill  (2015)}
-    \item \textbf{Black Belt} in Shotokan Karate Style from Japan Karate Association(JKA) \emph{\hfill  (2009)}
-    \item Participated in \textbf{5km Cycling, 4.5km Crossy running} GC at PG Sports IIT Bombay \emph{\hfill  (2017-2018)}
+    \item Among \textbf{top 1\%} students in HSC($12^{th}$ examination) of Maharashtra state board \emph{\hfill  (2011)}
+    \item Sho Dan (\textbf{Black Belt}) in Shotokan Karate Style from Japan Karate Association(JKA) \emph{\hfill  (2009)}
+    \item Participated in \textbf{5km Cycling, 5km Crossy running} at PG Sports IIT Bombay \emph{\hfill  (2017-2018)}
     \item \textbf{Hobbies:} Solving 9$\times$9 Sudoku and Rubik's Cube, Watching Football matches and Anime
 \end{itemize}
 \end{document}
